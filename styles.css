@@ -1,0 +1,95 @@
+/* Theme Variables */
+:root {
+    --background-color: #f4f4f4;
+    --container-bg-color: #fff;
+    --text-color: #333;
+    --secondary-text-color: #555;
+    --header-text-color: #007bff;
+    --highlight-bg-color: #e7f1ff;
+    --border-radius: 5px;
+    --background-january: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    --background-february: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    --background-march: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    --background-april: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    --background-may: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    --background-june: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    --background-july: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    --background-august: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    --background-september: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    --background-october: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    --background-november: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    --background-december: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-image: var(--background-december);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 2em;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.profile-bio {
+    color: var(--secondary-text-color);
+    font-size: 1.1em;
+}
+
+.profile-content h2 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.profile-content p, 
+.profile-content ul {
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+.profile-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-content ul li {
+    background: var(--highlight-bg-color);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: var(--border-radius);
+}
+
+.profile-content a {
+    color: var(--header-text-color);
+    text-decoration: none;
+}
+
+.profile-content a:hover {
+    text-decoration: underline;
+}
